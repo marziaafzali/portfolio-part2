@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import Profile from "../assets/profile.jpg";
 import myimg from "../assets/myimg.jpg";
 
 function Content() {
-  // Array of quotes (you can add as many as you like)
+  // Array of quotes 
   const quotes = [
     "Code is like humor. When you have to explain it, it’s bad.",
     "The only way to learn a new programming language is by writing programs in it. – Dennis Ritchie",
@@ -11,10 +12,10 @@ function Content() {
     "Programs must be written for people to read, and only incidentally for machines to execute. – Harold Abelson"
   ];
 
-  // State to hold the selected quote
+  
   const [quote, setQuote] = useState("");
 
-  // Pick a random quote when the page loads
+  
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     setQuote(quotes[randomIndex]);
@@ -34,12 +35,16 @@ function Content() {
                   I&apos;m a <span className="typing">web designer</span>
                 </h3>
 
-                <h4>I am a skilled web designer passionate about creating modern, responsive websites. "Code is like humor. When you have to explain it, it’s bad."</h4>
+                <h4>  I am a passionate and detail-oriented developer with expertise in modern web technologies and design tools.  
+        I create responsive, user-friendly, and visually appealing websites using <strong>HTML, CSS, JavaScript, React, Bootstrap</strong>.  
+        I also work with <strong>Python</strong> for backend development, manage data efficiently with <strong>Databases</strong>, and design creative graphics using <strong>Photoshop</strong>.  
+        Additionally, I have experience building and customizing websites on <strong>WordPress</strong>.
+      </h4>
 
-                {/* Show random quote here */}
-                <p style={{ fontStyle: "italic", fontSize: "18px" }}>{quote}</p>
+                
+                <p style={{ fontStyle: "italic", fontSize: "18px", marginTop:"30px" }}>{quote}</p>
 
-                <a href="#Contact" className="btn hire-me">
+                <a href="Contact" className="btn hire-me">
                   Hire Me
                 </a>
               </div>

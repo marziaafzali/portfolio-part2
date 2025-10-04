@@ -1,3 +1,5 @@
+
+
 function contact() {
   return (
     <>
@@ -18,9 +20,9 @@ function contact() {
                 <p>+93 7485849424</p>
             </div>
              <div className="contact-info-item padd-15 ">
-                <div className="icon"><i className="fa fa-map-marker-alt"></i></div>
-                <h4>Office</h4>
-                <p>+93 7485849424</p>
+                <div className="icon"> <i className="fab fa-linkedin" ></i></div>
+                <h4>Linkdin</h4>
+                <p>https://linkedin.com</p>
             </div>
              <div className="contact-info-item padd-15">
                 <div className="icon"><i className="fa fa-envelope"></i></div>
@@ -29,9 +31,9 @@ function contact() {
             </div>
 
              <div className="contact-info-item padd-15">
-                <div className="icon"><i className="fa fa-globe-europe"></i></div>
-                <h4>website</h4>
-                <p>+93 7485849424</p>
+                <div className="icon"><i className="fab fa-github"></i></div>
+                <h4>Github</h4>
+                <p><a>https://github.com/marziaafzali</a></p>
             </div> 
 
         </div>

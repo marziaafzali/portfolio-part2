@@ -5,8 +5,7 @@ function About() {
 
   // Your full about text
   const aboutText =
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia saepe ex velit possimus, rem, neque asperiores aliquam nostrum tenetur placeat, harum ea fugiat optio quaerat dolorum eveniet dolores nobis ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam, accusantium placeat officiis odio unde, velit hic dignissimos voluptas magni quos tempora repudiandae ipsa, nihil reiciendis.";
-
+  "I am a Computer Science student with a passion for technology, creativity, and problem-solving. As I continue my academic journey, I actively build real-world skills through projects that combine design, functionality, and innovation.My expertise includes HTML, CSS, JavaScript, React, Bootstrap, Python, Databases, WordPress, and Photoshop. I enjoy creating websites that are not only visually appealing but also responsive and user-friendly. Beyond coding, I value clear communication, teamwork, and continuous learning.  My goal is to grow into a versatile developer who can contribute to impactful projects, collaborate with diverse teams, and make technology more accessible and engaging for everyone."
   return (
     <section className="about section" id="about">
       <div className="container">
@@ -70,7 +69,7 @@ function About() {
                 {/* Buttons */}
                 <div className="row">
                   <div className="button padd-15">
-                    {/* ✅ Download CV Button */}
+                    {/*  Download CV Button */}
                     <a
                       href="/marzia afzali_CV.pdf"
                       download="Marzia_CV"
@@ -105,15 +104,15 @@ function About() {
                   <div className="skill-item padd-15">
                     <h5>Python</h5>
                     <div className="progress">
-                      <div className="prigress-in" style={{ width: "76%" }}></div>
+                      <div className="prigress-in" style={{ width: "75%" }}></div>
                       <div className="skill-percent">75%</div>
                     </div>
                   </div>
                   <div className="skill-item padd-15">
                     <h5>SQL & MySQL</h5>
                     <div className="progress">
-                      <div className="prigress-in" style={{ width: "76%" }}></div>
-                      <div className="skill-percent">76%</div>
+                      <div className="prigress-in" style={{ width: "65%" }}></div>
+                      <div className="skill-percent">65%</div>
                     </div>
                   </div>
                 </div>
@@ -131,16 +130,29 @@ function About() {
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h3 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2013 - 2015
+                          <i className="fa fa-calendar"></i> 2022 – Present
                         </h3>
                         <h4 className="timeline-title">
-                          Computer science degree in progress
+                        Computer Science Degree (In Progress)
                         </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                        Currently pursuing a Bachelor’s in Computer Science, gaining strong foundations in algorithms, programming, database management, and software development. Alongside my academic studies, I actively work on personal and team projects to sharpen my technical and problem-solving skills.
                         </p>
                       </div>
-                      {/* You can add more timeline items here */}
+                      <div className="timeline-item">
+                        <div className="circle-dot"></div>
+                        <h3 className="timeline-date">
+                          <i className="fa fa-calendar"></i> Graduated in 2021
+
+                        </h3>
+                        <h4 className="timeline-title">
+                        High School Diploma
+
+                        </h4>
+                        <p className="timeline-text">
+                        Completed secondary education with a strong interest in technology, mathematics, and design, which inspired me to pursue a career in computer science and web development. </p>
+                      </div>
+                      {/*  more timeline items  */}
                     </div>
                   </div>
                 </div>
@@ -155,16 +167,37 @@ function About() {
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h3 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2013 - 2015
+                          <i className="fa fa-calendar"></i> 2023 - Present
                         </h3>
                         <h4 className="timeline-title">
-                          Web Development Projects
+                        Technical Skills & Expertise
                         </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                        </p>
+                          <ul>
+                    <li><strong>  Web Development:</strong>  HTML, CSS, JavaScript, React, Bootstrap, WordPress</li> 
+
+                    <li> <strong>Programming:</strong>  Python (with focus on backend and automation)</li> 
+
+                    <li><strong>Databases:</strong>  MySQL, SQL</li> 
+
+                    <li>  <strong>Design:</strong>  Photoshop, UI/UX design principles</li> 
+
+                    <li> <strong>Other: </strong> Git/GitHub, Responsive Design, REST APIs</li> </ul>
+                       </p>
                       </div>
-                      {/* You can add more timeline items here */}
+                      <div className="timeline-item">
+                        <div className="circle-dot"></div>
+                        <h3 className="timeline-date">
+                         
+                        </h3>
+                        <h4 className="timeline-title">
+                        Language Proficiency
+                        </h4>
+                        <p className="timeline-text">
+                        Passed the Duolingo English Test, demonstrating strong skills in reading, writing, listening, and speaking English for academic and professional use.
+                       </p>
+                      </div>
+                      {/*  more timeline items */}
                     </div>
                   </div>
                 </div>
