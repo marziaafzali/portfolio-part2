@@ -160,7 +160,7 @@ ul{
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/*   aside   */
+
 /* ---------- Aside Base Styles ---------- */
 .aside {
   width: 270px;
@@ -308,7 +308,6 @@ ul{
 
 /* ---------- Responsive Styles ---------- */
 
-/* Tablet / Mobile */
 @media (max-width: 991px) {
   .aside {
     transform: translateX(-100%); /* hide aside by default */
@@ -792,6 +791,7 @@ padding: 0 50px;
 
 .form-control{
   background: var(--bg-black-100);
+  color:var(--text-black-100);
   padding: 10px;
   border-radius: 20px;
 }
