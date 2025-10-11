@@ -7,7 +7,7 @@ import project5 from "../assets/project5.jpg";
 import project7 from "../assets/project7.jpg";
 
 function Project() {
-  // ✅ Define all projects in an array
+ 
   const projects = [
     {
       id: 1,
@@ -65,16 +65,15 @@ function Project() {
     },
   ];
 
-  // ✅ Filter state
+
   const [filter, setFilter] = useState("All");
 
-  // ✅ Filtered projects
+
   const filteredProjects =
     filter === "All"
       ? projects
       : projects.filter((p) => p.tech.includes(filter));
 
-  // ✅ All available categories
   const categories = [
     "All",
     "HTML",
@@ -101,7 +100,7 @@ function Project() {
           </div>
         </div>
 
-        {/* ✅ Filter Buttons */}
+    
         <div className="filter-buttons padd-15" style={{ textAlign: "center", marginBottom: "20px" }}>
           {categories.map((cat) => (
             <button
@@ -114,7 +113,7 @@ function Project() {
           ))}
         </div>
 
-        {/* ✅ Projects Grid */}
+        
         <div className="row">
           {filteredProjects.map((proj) => (
             <div className="portfolio-item padd-15" key={proj.id}>
@@ -135,7 +134,7 @@ function Project() {
         </div>
       </div>
 
-      {/* ✅ Simple styling for active filter 
+      {/*  Simple styling for active filter 
       <style>{`
         .filter-btn {
           background-color: var(--bg-color);
