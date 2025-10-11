@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 function Contact() {
-  //  State for form data
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,13 +26,12 @@ function Contact() {
     localStorage.setItem("contactForm", JSON.stringify(formData));
   }, [formData]);
 
-  //  Handle input change
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   }
 
-  //  Debounced email validation
+
   useEffect(() => {
     const timer = setTimeout(() => {
       if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
@@ -44,7 +43,7 @@ function Contact() {
     return () => clearTimeout(timer);
   }, [formData.email]);
 
-  //  Handle form submission (with EmailJS)
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -69,11 +68,11 @@ function Contact() {
       setShowModal(true);
       setSending(false);
 
-      // reset form
+    
       setFormData({ name: "", email: "", subject: "", message: "" });
       localStorage.removeItem("contactForm");
 
-      // auto-close modal
+      
       setTimeout(() => setShowModal(false), 3000);
     } catch (error) {
       console.error("EmailJS Error:", error);
@@ -140,7 +139,7 @@ function Contact() {
           I'm very responsive to messages
         </h4>
 
-        {/* ✅ Contact Form */}
+       
         <form className="contact-form padd-15" onSubmit={handleSubmit}>
           <div className="row">
             <div className="form-item col-6 padd-15">
@@ -203,7 +202,7 @@ function Contact() {
           </div>
         </form>
 
-        {/* ✅ Live Preview 
+       
         <div className="preview padd-15">
           <h4>Live Preview:</h4>
           <p><strong>Name:</strong> {formData.name}</p>
@@ -211,7 +210,6 @@ function Contact() {
           <p><strong>Message:</strong> {formData.message}</p>
         </div>
 
-        {/* ✅ Confirmation Modal }
         {showModal && (
           <div className="modal">
             <div className="modal-content">
