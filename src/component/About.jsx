@@ -77,7 +77,8 @@ function About() {
                     >
                       Download CV
                     </a>
-                    <a href="#contact" className="btn hire-me">
+                 
+                    <a href="/contact" className="btn hire-me">
                       Hire me
                     </a>
                   </div>

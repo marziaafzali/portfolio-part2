@@ -160,7 +160,16 @@ ul{
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
+/*   aside   */
+/* ---------- Aside Base Styles ---------- */
+.aside {
+  width: 270px;
+  background: var(--bg-black-100);
+  position: fixed;
+  left: 0;
+  top: 0;}
 
+/*   aside   */
 /* ---------- Aside Base Styles ---------- */
 .aside {
   width: 270px;
@@ -306,56 +315,6 @@ ul{
   margin-right: 15px;
 }
 
-/* ---------- Responsive Styles ---------- */
-
-@media (max-width: 991px) {
-  .aside {
-    transform: translateX(-100%); /* hide aside by default */
-  }
-
-  .aside.open {
-    transform: translateX(0); /* show aside when toggled */
-  }
-
-  .aside .nav-toggler {
-    display: flex;
-    left: 20px;
-    top: 20px;
-  }
-}
-
-/* Small Devices */
-@media (max-width: 576px) {
-  .aside {
-    width: 220px;
-    padding: 20px;
-  }
-
-  .aside .logo a {
-    font-size: 24px;
-  }
-
-  .aside .logo a span {
-    font-size: 32px;
-  }
-
-  .aside .nav li a {
-    font-size: 14px;
-    padding: 5px 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .aside {
-    transform: translateX(-100%);
-  }
-  .aside.open {
-    transform: translateX(0);
-  }
-  .nav-toggler {
-    display: flex;
-  }
-}
 
 
 /* home section   */
@@ -894,3 +853,53 @@ padding: 0 50px;
 
 
 
+.error {
+  color: var(--skin-color);
+  font-size: 0.9rem;
+}/* Autofill fix for Chrome/Edge */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg-black-100) inset !important;
+  -webkit-text-fill-color: var(--text-black-900) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Focus styling */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color-light);
+}
+
+/* Normal form-control */
+.form-control {
+  background-color: var(--bg-black-100);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+
+.filter-btn {
+  background-color: var(--bg-black-100);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-btn:hover {
+  background-color: var(--bg-black-100);
+  color:var(--text-black-100);
+}
+.filter-btn.active {
+  background-color: var(--bg-black-100);
+  color: var(--text-black-100);
+  border-color: var(--primary-color);
+}

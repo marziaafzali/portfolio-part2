@@ -44,7 +44,7 @@ function Content() {
                 
                 <p style={{ fontStyle: "italic", fontSize: "18px", marginTop:"30px" }}>{quote}</p>
 
-                <a href="Contact" className="btn hire-me">
+                <a href="/Contact" className="btn hire-me">
                   Hire Me
                 </a>
               </div>
