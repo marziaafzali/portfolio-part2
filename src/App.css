@@ -807,6 +807,7 @@ padding: 0 50px;
  
   .main-content{
     padding-left:0 ;
+    width: 100%;
   }
   .about .about-content .personal-info .info-item p span{
     display: block;
@@ -821,6 +822,11 @@ padding: 0 50px;
   .services .services-item{
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .main-content{
+    padding-left:0 ;
+    width: 100%;
   }
   
   .home .home-info{
@@ -902,4 +908,18 @@ input:focus, textarea:focus {
   background-color: var(--bg-black-100);
   color: var(--text-black-100);
   border-color: var(--primary-color);
+}
+
+
+/* ---------- Responsive Sidebar for Small Screens ---------- */
+@media (max-width: 768px) {
+  .Main-container{
+    width: 100%;
+  }
+  .aside {
+    width: 3rem; /* narrow width */
+    padding: 20px 5px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
