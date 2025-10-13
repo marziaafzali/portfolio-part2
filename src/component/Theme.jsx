@@ -4,51 +4,65 @@ function Theme() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Load saved theme and handle scroll
   useEffect(() => {
-   
+    // Load dark mode from localStorage
     const savedDark = localStorage.getItem("darkMode") === "true";
     setIsDarkMode(savedDark);
     document.body.classList.toggle("dark", savedDark);
 
-    function handleScroll() {
-      setIsOpen(false);
-    }
+    // Close style switcher on scroll
+    const handleScroll = () => setIsOpen(false);
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function setActiveStyle(color) {
-    let newColor;
-    switch (color) {
-      case "color-1": newColor = "#ec1839"; break;
-      case "color-2": newColor = "#fa5b0f"; break;
-      case "color-3": newColor = "#37b182"; break;
-      case "color-4": newColor = "#1854b4"; break;
-      case "color-5": newColor = "#f021b2"; break;
-      default: newColor = "#ec1839";
-    }
-    document.documentElement.style.setProperty("--skin-color", newColor);
-    localStorage.setItem("themeColor", newColor); 
-  }
-
-  function toggleDarkMode() {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    document.body.classList.toggle("dark", newMode);
-    localStorage.setItem("darkMode", newMode);
-  }
-
+  // Load saved color
   useEffect(() => {
-    
     const savedColor = localStorage.getItem("themeColor");
     if (savedColor) {
       document.documentElement.style.setProperty("--skin-color", savedColor);
     }
   }, []);
 
+  // Set selected theme color
+  const setActiveStyle = (color) => {
+    let newColor;
+    switch (color) {
+      case "color-1":
+        newColor = "#ec1839";
+        break;
+      case "color-2":
+        newColor = "#fa5b0f";
+        break;
+      case "color-3":
+        newColor = "#37b182";
+        break;
+      case "color-4":
+        newColor = "#1854b4";
+        break;
+      case "color-5":
+        newColor = "#f021b2";
+        break;
+      default:
+        newColor = "#ec1839";
+    }
+    document.documentElement.style.setProperty("--skin-color", newColor);
+    localStorage.setItem("themeColor", newColor);
+  };
+
+  // Toggle dark/light mode
+  const toggleDarkMode = () => {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    document.body.classList.toggle("dark", newMode);
+    localStorage.setItem("darkMode", newMode);
+  };
+
   return (
     <div className={`style-switcher ${isOpen ? "open" : ""}`}>
-     
+      {/* Gear Button */}
       <div
         className="style-switcher-toggler s-icon"
         onClick={() => setIsOpen(!isOpen)}
@@ -56,7 +70,7 @@ function Theme() {
         <i className="fas fa-cog fa-spin"></i>
       </div>
 
-      
+      {/* Dark / Light Toggle */}
       <div className="day-night s-icon" onClick={toggleDarkMode}>
         <i className={isDarkMode ? "fas fa-sun" : "fas fa-moon"}></i>
       </div>
