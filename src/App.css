@@ -29,7 +29,7 @@ body {
 }
 body, p, h4 {
   color: var(--text-black-900);
-  transition: color 0.3s ease; /* smooth change */
+  transition: color 0.3s ease; 
 }
 
 h4 {
@@ -62,23 +62,50 @@ i, .icon {
 ul{
   list-style: none;
 }
-.section{
+
+
+.section {
   background: var(--bg-black-900);
   min-height: 100vh;
   display: block;
   padding: 0 30px;
   opacity: 1;
+  position: relative; 
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
+
+.section .active{
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+.Main-container{
+  padding-left: 0;
+}
 
 .hidden{
   display: none !important;
   
 }
 
-.Main-container{
-  padding-left: 270px;
-}
 
 .padd-15{
   padding-left: 15px;
@@ -286,13 +313,9 @@ ul{
   margin-top: 50px;
 }
 
-.aside .nav span{
-  color: var(--skin-color);
-}
 
-.fa-home{
-  color: var(--skin-color);
-}
+
+
 .aside .nav li {
   margin-bottom: 20px;
   display: block;
@@ -307,7 +330,7 @@ ul{
   border-bottom: 1px solid var(--bg-black-50);
 }
 
-.aside .nav li a.active {
+.aside .nav li.active {
   color: var(--skin-color);
 }
 
@@ -800,7 +823,6 @@ padding: 0 50px;
 
 
 
-
 /* responsive section */
 
 @media (max-width:1199px) {
@@ -816,7 +838,6 @@ padding: 0 50px;
 }
 
 @media (max-width:991px){
-  /*.feedback-wall .feedback-card,*/
   .contact .contact-info-item,
   .portfolio .portfolio-item,
   .services .services-item{
@@ -824,11 +845,6 @@ padding: 0 50px;
     max-width: 50%;
   }
 
-  .main-content{
-    padding-left:0 ;
-    width: 100%;
-  }
-  
   .home .home-info{
     flex: 0 0 100%;
     max-width: 100%;
@@ -841,7 +857,7 @@ padding: 0 50px;
 
 
 @media (max-width: 767px) {
-  /*.feedback-wall .feedback-card,*/
+  
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portfolio .portfolio-item,
@@ -854,6 +870,9 @@ padding: 0 50px;
     max-width: 100%;
   }
 }
+
+
+
 
 
 
@@ -911,15 +930,134 @@ input:focus, textarea:focus {
 }
 
 
-/* ---------- Responsive Sidebar for Small Screens ---------- */
-@media (max-width: 768px) {
-  .Main-container{
-    width: 100%;
-  }
-  .aside {
-    width: 3rem; /* narrow width */
-    padding: 20px 5px;
+
+/* Default link style */
+.aside .nav li a.active {
+  color: var(--skin-color);
+  
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-black-900);
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+/* Active link style */
+.nav-link.active {
+  color: var(--skin-color);
+ 
+  border-radius: 8px;
+}
+
+/* Optional: highlight icon too */
+.nav-link.active i {
+  color: var(--skin-color);
+}
+
+
+
+
+
+/* ---------- Base Aside ---------- */
+
+/* ---------- Nav Toggler ---------- */
+.nav-toggler {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+  z-index: 200;
+}
+
+/* ---------- Responsive (Mobile & Tablet) ---------- */
+@media (max-width: 900px) {
+  .nav-toggler {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .aside {
+    width: 4rem; 
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .aside .logo {
+    display: none;
+  }
+
+  .aside .nav {
+    margin-top: 60px;
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  .aside .nav-link {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  
+  .aside .nav-link .nav-label {
+    display: none;
+  }
+
+  .aside.open {
+    width: 220px;
+  }
+
+  .aside.open .nav-link .nav-label {
+    display: inline;
+  }
+
+  .aside.open .logo {
+    display: block;
+    margin-top: 20px;
   }
 }
+
+
+
+
+
+/* Main layout */
+.app-container {
+  display: flex;
+}
+
+/* Default sidebar width */
+.main-content {
+  margin-left: 270px;
+  transition: margin-left 0.3s ease;
+  width: calc(100% - 270px);
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 900px) {
+  .main-content {
+    margin-left: 4rem;
+    width: calc(100% - 4rem);
+  }
+
+
+  .aside.open ~ .main-content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+
+
+
+
+

@@ -19,22 +19,23 @@ import Theme from './component/Theme.jsx';
 function App() {
   return (
     <Router>
-      <div className='Main-container'>
-        <Aside />  {/* sidebar stays persistent */}
+      <div className="app-container">
+        <Aside />
 
-        <Routes>
-          <Route path="/" element={<Content />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Project />} />
-          <Route path="/sertificates" element={<Sertificates />} />
-          <Route path="/feedback" element={<Feedback />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Content />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/sertificates" element={<Sertificates />} />
+            <Route path="/feedback" element={<Feedback />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </div>
 
       <Theme />
     </Router>
   );
 }
-
 export default App;

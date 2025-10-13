@@ -203,7 +203,7 @@ function Contact() {
           </div>
         </form>
 
-        {/* ✅ Live Preview 
+        {/* ✅ Live Preview */}
         <div className="preview padd-15">
           <h4>Live Preview:</h4>
           <p><strong>Name:</strong> {formData.name}</p>
@@ -211,7 +211,7 @@ function Contact() {
           <p><strong>Message:</strong> {formData.message}</p>
         </div>
 
-        {/* ✅ Confirmation Modal }
+        {/* ✅ Confirmation Modal */}
         {showModal && (
           <div className="modal">
             <div className="modal-content">
@@ -219,7 +219,7 @@ function Contact() {
               <p>Your message has been sent successfully.</p>
             </div>
           </div>
-        )}*/}
+        )}
       </div>
     </section>
   );

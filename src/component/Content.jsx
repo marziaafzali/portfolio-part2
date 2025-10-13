@@ -23,7 +23,7 @@ function Content() {
 
   return (
     <>
-      <div className="main-content">
+     
         <div className="home section">
           <div className="container">
             <div className="row">
@@ -54,7 +54,7 @@ function Content() {
             </div>
           </div>
         </div>
-      </div>
+    
     </>
   );
 }
