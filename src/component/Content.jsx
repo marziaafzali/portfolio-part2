@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Profile from "../assets/profile.jpg";
 import myimg from "../assets/myimg.jpg";
+import { Link } from "react-router-dom";
 
 function Content() {
   // Array of quotes 
@@ -44,9 +45,9 @@ function Content() {
                 
                 <p style={{ fontStyle: "italic", fontSize: "18px", marginTop:"30px" }}>{quote}</p>
 
-                <a href="/Contact" className="btn hire-me">
-                  Hire Me
-                </a>
+                <Link to="/contact" className="btn hire-me">
+  Hire Me
+</Link>
               </div>
               <div className="home-img padd-15">
                 <img src={myimg} alt="my image" />

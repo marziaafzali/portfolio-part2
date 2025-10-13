@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -77,10 +78,9 @@ function About() {
                     >
                       Download CV
                     </a>
-                 
-                    <a href="/contact" className="btn hire-me">
-                      Hire me
-                    </a>
+                    <Link to="/contact" className="btn hire-me">
+  Hire Me
+</Link>
                   </div>
                 </div>
               </div>
