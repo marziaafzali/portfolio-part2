@@ -25,7 +25,7 @@ function Aside() {
       <aside className={`aside ${menuOpen ? "open" : ""}`}>
         <div className="logo">
           <NavLink to="/" end onClick={() => setMenuOpen(false)}>
-            <span>M</span>rzia
+            <span>M</span>arzia
           </NavLink>
         </div>
 

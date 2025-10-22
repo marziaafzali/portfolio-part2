@@ -5,6 +5,7 @@ import project3 from "../assets/project3.jpg";
 import project4 from "../assets/project4.jpg";
 import project5 from "../assets/project5.jpg";
 import project7 from "../assets/project7.jpg";
+import project8 from "../assets/project8.jpg";
 
 function Project() {
   // ✅ Define all projects in an array
@@ -18,6 +19,7 @@ function Project() {
         "Built with React and OpenAI API to translate text between multiple languages. Demonstrates React development and API integration.",
       tech: ["React", "API"],
     },
+    
     {
       id: 2,
       title: "Freelance Invoice App",
@@ -62,6 +64,15 @@ function Project() {
       desc:
         "Dynamic web app showing movie listings and ticket options. Focused on responsive layouts and interactivity.",
       tech: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      id: 7,
+      title: "AI Movie Recommendation App",
+      img: project8,
+      link: "https://movie-recommandationapp.vercel.app/",
+      desc:
+        "y movie recommendation app is designed to help users discover films based on their personal preferences and interests. Users can browse movies by genre, rating, and popularity, and the app provides personalized suggestions using a recommendation system.",
+      tech: ["React", "API"],
     },
   ];
 
