@@ -71,7 +71,7 @@ function Project() {
       img: project8,
       link: "https://movie-recommandationapp.vercel.app/",
       desc:
-        "y movie recommendation app is designed to help users discover films based on their personal preferences and interests. Users can browse movies by genre, rating, and popularity, and the app provides personalized suggestions using a recommendation system.",
+        "Built with React and a movie API, this app recommends movies based on user preferences. Demonstrates personalized recommendation systems, API integration, and user-friendly interface design.",
       tech: ["React", "API"],
     },
   ];
