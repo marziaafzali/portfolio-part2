@@ -10,7 +10,7 @@ function Aside() {
     { path: "/about", icon: "fa fa-user", label: "About" },
     { path: "/projects", icon: "fa fa-briefcase", label: "Projects" },
     { path: "/sertificates", icon: "fas fa-certificate", label: "Certificate" },
-    { path: "/feedback", icon: <FaQuoteLeft style={{  marginRight: "10px" }} />, label: "Testimonial" },
+   // { path: "/feedback", icon: <FaQuoteLeft style={{  marginRight: "10px" }} />, label: "Testimonial" },
     { path: "/contact", icon: "fa fa-comments", label: "Contact" },
   ];
 
