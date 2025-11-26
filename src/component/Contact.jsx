@@ -121,7 +121,7 @@ function Contact() {
 
           <div className="contact-info-item padd-15">
             <div className="icon">  <a
-                href="https://github.com/marziaafzali"
+                //href="https://github.com/marziaafzali"
                 target="_blank"
                 rel="noreferrer"
               >
