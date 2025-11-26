@@ -84,6 +84,15 @@ function Project() {
         "An intelligent movie recommendation tool built with React and a movie API. It suggests films based on user preferences and highlights personalized recommendations, smooth API integration, and a user-friendly interface.",
       tech: ["React", "API"],
     },
+     {
+      id: 7,
+      title: "AI Movie Recommendation App",
+      img: project8,
+      link: "https://movie-recommandationapp.vercel.app/",
+      desc:
+        "An intelligent movie recommendation tool built with React and a movie API. It suggests films based on user preferences and highlights personalized recommendations, smooth API integration, and a user-friendly interface.",
+      tech: ["React", "API"],
+    },
    
   ];
 
