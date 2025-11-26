@@ -6,17 +6,27 @@ import project4 from "../assets/project4.jpg";
 import project5 from "../assets/project5.jpg";
 import project7 from "../assets/project7.jpg";
 import project8 from "../assets/project8.jpg";
+import project9 from "../assets/project9.jpg";
 
 function Project() {
   // ✅ Define all projects in an array
   const projects = [
+     {
+      id: 8,
+      title: "BizPlanner – Smart Business Management Dashboard",
+      img: project9,
+      link: "https://capstone-project-vffe.vercel.app/",
+      desc:
+        "BizPlanner is a smart business management tool designed to help entrepreneurs plan and organize their operations with ease. It includes features like a product cost and profit calculator, an AI-powered marketing plan generator, and a simple daily planner. The platform focuses on clarity, efficiency, and usability to support better business decisions.",
+      tech: ["API"],
+    },
     {
       id: 1,
       title: "Translation App",
       img: project7,
       link: "https://openai-translationapp.vercel.app/",
       desc:
-        "Built with React and OpenAI API to translate text between multiple languages. Demonstrates React development and API integration.",
+        "A simple translation tool built with React and the OpenAI API. It supports multiple languages and showcases clean UI design, efficient API usage, and practical real-world functionality.",
       tech: ["React", "API"],
     },
     
@@ -26,7 +36,7 @@ function Project() {
       img: project1,
       link: "https://marziaafzali.github.io/A-Freelance-Invoice-Client-Manager-App/",
       desc:
-        "A web app for freelancers to create and manage invoices easily. Showcases form handling, JS logic, and localStorage usage.",
+        "A lightweight web app for freelancers to create and manage invoices. It demonstrates form handling, JavaScript logic, and efficient use of localStorage for data persistence.",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
@@ -62,7 +72,7 @@ function Project() {
       img: project2,
       link: "https://marziaafzali.github.io/movie-theater-/",
       desc:
-        "Dynamic web app showing movie listings and ticket options. Focused on responsive layouts and interactivity.",
+        "A dynamic web app displaying movie listings and ticket options. It focuses on responsive layout, clean UI, and interactive features for an engaging user experience.",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
@@ -71,9 +81,10 @@ function Project() {
       img: project8,
       link: "https://movie-recommandationapp.vercel.app/",
       desc:
-        "Built with React and a movie API, this app recommends movies based on user preferences. Demonstrates personalized recommendation systems, API integration, and user-friendly interface design.",
+        "An intelligent movie recommendation tool built with React and a movie API. It suggests films based on user preferences and highlights personalized recommendations, smooth API integration, and a user-friendly interface.",
       tech: ["React", "API"],
     },
+   
   ];
 
   // ✅ Filter state

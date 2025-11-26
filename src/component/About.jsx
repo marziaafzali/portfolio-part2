@@ -103,7 +103,7 @@ function About() {
                     </div>
                   </div>
                   <div className="skill-item padd-15">
-                    <h5>Python</h5>
+                    <h5>Python & API</h5>
                     <div className="progress">
                       <div className="prigress-in" style={{ width: "75%" }}></div>
                       <div className="skill-percent">75%</div>

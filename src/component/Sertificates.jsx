@@ -7,6 +7,8 @@ import c4 from '../assets/c4.jpg';
 import c5 from '../assets/c5.jpg';
 import c3 from '../assets/c3.jpg';
 import c8 from '../assets/c8.jpg';
+import c9 from '../assets/c9.jpg';
+
 
 
 function Sertificates() {
@@ -21,6 +23,13 @@ function Sertificates() {
           </div>
 
           <div className="row">
+            <div className="portfolio-item padd-15">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
+                  <img src={c9} alt="Certificate 7" />
+                </div>
+              </div>
+            </div>
             <div className="portfolio-item padd-15">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
@@ -77,6 +86,7 @@ function Sertificates() {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
