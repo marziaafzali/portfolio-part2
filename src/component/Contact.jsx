@@ -108,7 +108,7 @@ function Contact() {
             <h4>LinkedIn</h4>
             <p>
               
-                linkedin.com
+                linkedin.com/Marzia Afzali
              
             </p>
           </div>
