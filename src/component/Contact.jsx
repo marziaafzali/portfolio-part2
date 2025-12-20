@@ -102,7 +102,7 @@ function Contact() {
           </div>
 
           <div className="contact-info-item padd-15">
-            <div className="icon"><a href="https://www.linkedin.com/in/marzia-afzali-a613a039a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+            <div className="icon"><a href="https://www.linkedin.com/in/marzia-afzali-a613a039a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin"></i>
               </a></div>
             <h4>LinkedIn</h4>
