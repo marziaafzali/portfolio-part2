@@ -102,7 +102,7 @@ function Contact() {
           </div>
 
           <div className="contact-info-item padd-15">
-            <div className="icon"><a href="www.linkedin.com"  target="_blank" rel="noreferrer">
+            <div className="icon"><a href="https://www.linkedin.com/in/marzia-afzali-a613a039a/"  target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin"></i>
               </a></div>
             <h4>LinkedIn</h4>
