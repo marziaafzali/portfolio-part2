@@ -15,7 +15,7 @@ function Project() {
       id: 8,
       title: "BizPlanner – Smart Business Management Dashboard",
       img: project9,
-      link: "https://capstone-project-vffe.vercel.app/",
+     // link: "https://capstone-project-vffe.vercel.app/",
       desc:
         "BizPlanner is a smart business management tool designed to help entrepreneurs plan and organize their operations with ease. It includes features like a product cost and profit calculator, an AI-powered marketing plan generator, and a simple daily planner. The platform focuses on clarity, efficiency, and usability to support better business decisions.",
       tech: ["API"],
